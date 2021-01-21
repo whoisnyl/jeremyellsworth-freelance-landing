@@ -132,9 +132,9 @@ var six = "back-to-freelancing-full-time";
 function switchNav(index) {
   sections.each(function () {
     if ($(this).data("section") == index.replace("#", "")) {
-      $(this).parent().addClass("active");
+      $(this).parents("li").addClass("active");
     } else {
-      $(this).parent().removeClass("active");
+      $(this).parents("li").removeClass("active");
     }
   });
 }
