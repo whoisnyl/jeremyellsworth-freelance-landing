@@ -68,7 +68,7 @@ $(".success-stories__user-logo").slick({
   fade: true,
   slidesToScroll1: 1,
   arrows: false,
-  speed: 1500,
+  speed: 500,
 });
 
 // ================= TEXT ECLIPSE
