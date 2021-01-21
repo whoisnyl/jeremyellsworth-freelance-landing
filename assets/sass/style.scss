@@ -1,1 +1,37 @@
-@import "./config";
+@import "./variables.scss";
+
+// utilities
+@import "./utils/slick";
+
+// mixins
+@import "./mixins/fontface";
+@import "./mixins/placeholder";
+@import "./mixins/border-radius";
+@import "./mixins/transform";
+@import "./mixins/transition";
+
+// config
+@import "./config/default";
+@import "./config/fonts";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// components
+@import "./components/button";
+@import "./components//form-control";
+@import "./components/section";
+@import "./components/card";
+@import "./components/container";
+@import "./components/burger";
+
+// templates
+@import "./templates/header-banner";
+@import "./templates/logos-slider";
+@import "./templates/about-me";
+@import "./templates/success-stories";
+@import "./templates/the-process";
+@import "./templates/portfolio";
+@import "./templates/faqs";
+@import "./templates/order-plan";

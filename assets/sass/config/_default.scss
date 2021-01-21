@@ -1,0 +1,60 @@
+*,
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: $font-weight-regular;
+  font-size: 15px;
+  line-height: 35px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: 991px) {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+body {
+  background: #fff;
+  padding-top: 105px;
+
+  &.overflow {
+    overflow: hidden;
+  }
+
+  @media (max-width: 1199px) {
+    padding-top: 80.42px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin-bottom: 0;
+}

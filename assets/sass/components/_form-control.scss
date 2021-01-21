@@ -1,0 +1,19 @@
+.form-control {
+  background-color: $color-light;
+  color: $text-dark-primary;
+  border: 0;
+  padding: 0 24px;
+  height: 60px;
+  font-size: 17px;
+  line-height: 35px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+
+  @include placeholder {
+    color: #9c9c9c;
+    opacity: 1;
+  }
+}

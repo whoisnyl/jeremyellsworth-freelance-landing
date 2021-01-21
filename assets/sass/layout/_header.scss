@@ -1,0 +1,76 @@
+.header {
+  background-color: $color-light;
+  padding: 20px 0;
+  position: fixed;
+  width: 100% !important;
+  left: 0;
+  top: 0;
+  z-index: 150;
+
+  @media (max-width: 1199px) {
+    padding: 15px 0;
+  }
+
+  .logo {
+    display: block;
+    max-width: 60px;
+
+    @media (max-width: 1199px) {
+      max-width: 40px;
+    }
+  }
+
+  &_navigation {
+    padding-left: 30px;
+
+    @media (max-width: 1199px) {
+      padding-top: 50px;
+      padding-left: 0;
+    }
+
+    a {
+      font-family: $font-heading-medium;
+      display: block;
+      padding: 15px 20px;
+      font-size: 17px;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      -webkit-transition: color 0.3s ease-in-out;
+      -moz-transition: color 0.3s ease-in-out;
+      -ms-transition: color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      @media (max-width: 1199px) {
+        color: $color-light;
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      background-color: $color-dark;
+      position: fixed;
+      z-index: 200;
+      right: -320px;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      @include transition(right 0.3s ease-in-out);
+
+      &.open {
+        right: 0;
+      }
+    }
+  }
+
+  &_right-navigation {
+    .btn-social-fb {
+      margin-right: 30px;
+      display: block;
+      max-width: 26px;
+    }
+  }
+}

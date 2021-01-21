@@ -1,0 +1,63 @@
+.header_burger {
+  position: relative;
+  z-index: 250;
+
+  &-menu {
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    padding: 8px 0;
+
+    > div {
+      position: absolute;
+      border-bottom: 2px solid $color-dark;
+      width: 100%;
+      top: 50%;
+      margin-top: -1px;
+      width: 100%;
+      right: 0;
+      @include border-radius(1px);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      border-bottom: 2px solid $color-dark;
+      position: absolute;
+      @include border-radius(1px);
+    }
+
+    &::before {
+      top: 0;
+      width: 85%;
+      right: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      width: 70%;
+      right: 0;
+    }
+
+    &.open > div {
+      display: none;
+    }
+
+    &.open::before,
+    &.open::after {
+      border-color: $color-primary;
+      width: 100%;
+    }
+
+    &.open::before {
+      @include transform(rotate(45deg));
+      top: 7px;
+    }
+
+    &.open::after {
+      @include transform(rotate(-45deg));
+      bottom: 7px;
+    }
+  }
+}

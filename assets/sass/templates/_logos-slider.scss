@@ -1,0 +1,9 @@
+.logos-slider {
+  position: relative;
+  background-color: $color-primary;
+  padding: 2px 0;
+
+  .slick-slide {
+    padding: 0 1px;
+  }
+}

@@ -1,0 +1,45 @@
+.header-banner {
+  background-color: $color-primary;
+
+  @media (max-width: 991px) {
+    padding: 80px 0;
+  }
+
+  .row {
+    height: 700px;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+  }
+
+  .get-started-form-mini {
+    margin-top: 45px;
+
+    @media (max-width: 991px) {
+      margin-top: 30px;
+    }
+
+    .form-row {
+      margin-left: -10px;
+      margin-right: -10px;
+
+      & > .col,
+      & > [class*="col-"],
+      .col-button {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+
+    .btn {
+      padding: 0 25px;
+    }
+
+    &_note {
+      font-family: $font-marketweb;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+}

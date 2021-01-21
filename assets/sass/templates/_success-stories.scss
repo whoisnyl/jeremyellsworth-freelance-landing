@@ -1,0 +1,130 @@
+.success-stories {
+  background-color: $color-primary;
+  padding: 150px 0;
+  position: relative;
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+  }
+
+  &__control {
+    &-arrow-left {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -45px;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    &-arrow-right {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -45px;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+
+    &-dots {
+      left: 50%;
+      position: absolute;
+      bottom: 60px;
+      @include transform(translateX(-50%));
+
+      @media (max-width: 991px) {
+        bottom: 30px;
+      }
+
+      &_item {
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        background-color: #181818;
+        opacity: 0.5;
+        margin: 0 4px;
+        @include border-radius(6px);
+
+        &--active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .slick-slide:focus {
+    outline: 0;
+  }
+
+  &__user-message {
+    .reviews-user_profile {
+      margin-top: 30px;
+
+      &-avatar {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include border-radius(35px);
+
+        @media (max-width: 991px) {
+          width: 40px;
+          height: 40px;
+          @include border-radius(20px);
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        font-family: $font-rocksalt;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000305;
+        line-height: 23.5px;
+        margin-left: 20px;
+
+        @media (max-width: 991px) {
+          font-size: 9px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  &__action {
+    margin-top: 45px;
+    padding-left: 50px;
+
+    @media (max-width: 991px) {
+      padding-left: 35px;
+      margin-bottom: 30px;
+      padding-right: 35px;
+
+      a {
+        display: block;
+        width: 100%;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 35px;
+      height: 1px;
+      background-color: $color-darker;
+      margin-bottom: 40px;
+    }
+  }
+}
