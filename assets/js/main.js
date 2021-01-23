@@ -306,3 +306,13 @@ $(".success-stories__user-message").on(
     });
   }
 );
+
+// ================= PORTFOLIO
+
+$(".portfolio_action a").on("click", function (e) {
+  e.preventDefault();
+  $(".portfolio_grid-item").fadeIn();
+
+  // hide button
+  $(this).parents(".portfolio_action").hide();
+});

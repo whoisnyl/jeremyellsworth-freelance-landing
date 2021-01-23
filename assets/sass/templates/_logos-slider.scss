@@ -5,5 +5,15 @@
 
   .slick-slide {
     padding: 0 1px;
+
+    canvas {
+      display: block;
+      width: 100%;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 50%;
+    }
   }
 }
