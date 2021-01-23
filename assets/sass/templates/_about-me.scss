@@ -13,10 +13,32 @@
   }
 
   .col-12:first-of-type {
+    padding-right: 4rem;
+
+    @media (max-width: 1199px) {
+      padding-right: 2rem;
+    }
+
+    @media (max-width: 991px) {
+      padding-right: 1rem;
+    }
+
+    @media (max-width: 767px) {
+      padding-right: 15px;
+    }
+
     .section {
       position: relative;
       top: 0;
       margin-bottom: 90px;
+
+      &-headline {
+        margin-bottom: 25px;
+
+        @media (max-width: 991px) {
+          margin-bottom: 20px;
+        }
+      }
 
       @media (max-width: 991px) {
         margin-bottom: 40px;
@@ -29,7 +51,15 @@
   }
 
   .col-12:last-of-type {
-    padding-left: 2rem;
+    padding-left: 4rem;
+
+    @media (max-width: 1199px) {
+      padding-left: 2rem;
+    }
+
+    @media (max-width: 991px) {
+      padding-left: 1rem;
+    }
 
     @media (max-width: 767px) {
       padding-left: 15px;
@@ -51,11 +81,17 @@
   &_navigation {
     position: absolute;
     top: 0;
-    left: 2rem;
-    width: calc(100% - 2rem);
+    left: 4rem;
+    width: calc(100% - 5rem);
+
+    @media (max-width: 1199px) {
+      left: 2rem;
+      width: calc(100% - 3rem);
+    }
 
     @media (max-width: 991px) {
       left: 1rem;
+      width: calc(100% - 2rem);
     }
 
     @media (max-width: 767px) {
@@ -63,6 +99,45 @@
       width: 100%;
       left: 0;
       margin-bottom: 50px;
+      width: 100%;
+    }
+
+    &.sticky {
+      position: fixed !important;
+    }
+
+    &.stay-to-bottom {
+      position: absolute !important;
+      top: initial !important;
+      left: 4rem !important;
+      width: calc(100% - 5rem) !important;
+      bottom: 0;
+
+      @media (max-width: 1199px) {
+        left: 2rem !important;
+        width: calc(100% - 3rem) !important;
+      }
+
+      @media (max-width: 991px) {
+        left: 1rem !important;
+        width: calc(100% - 2rem) !important;
+      }
+    }
+
+    &.stay-to-top {
+      left: 4rem !important;
+      width: calc(100% - 5rem) !important;
+      top: 0 !important;
+
+      @media (max-width: 1199px) {
+        left: 2rem !important;
+        width: calc(100% - 3rem) !important;
+      }
+
+      @media (max-width: 991px) {
+        left: 1rem !important;
+        width: calc(100% - 2rem) !important;
+      }
     }
   }
 

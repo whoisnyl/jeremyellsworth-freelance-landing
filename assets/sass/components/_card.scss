@@ -61,6 +61,10 @@
   &-body {
     padding: 40px;
 
+    @media (max-width: 991px) {
+      padding: 20px;
+    }
+
     h4 {
       font-family: $font-heading-semibold;
       font-size: 20px;
