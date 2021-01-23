@@ -316,3 +316,15 @@ $(".portfolio_action a").on("click", function (e) {
   // hide button
   $(this).parents(".portfolio_action").hide();
 });
+
+// ================= THE PROCESS
+
+$(".btn-order-now").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: $(".order-plan").offset().top - $("header").outerHeight(true),
+    },
+    500
+  );
+});
